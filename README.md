@@ -32,7 +32,8 @@ MyView = Backbone.View.extend({
 
 Events are key value pairs:
 
-1. The key has the event type it listens for ie (click, submit, mouseenter) followed by a space and then a css selector to scope where exactly the event listener should be listening within all the HTML managed by the view.2. The value is a string that is the name of a function defined on the view.
+1. The key has the event type it listens for ie (click, submit, mouseenter) followed by a space and then a css selector to scope where exactly the event listener should be listening within all the HTML managed by the view.
+2. The value is a string that is the name of a function defined on the view.
 
 In this lab you are going to add some HTML to the page using a backbone view.  We're going to add a clickable element ("a link"), we're going to stop the default behavior of the link and then simply write to the console.
 
