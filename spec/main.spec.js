@@ -1,6 +1,6 @@
 'use strict';
 
-describe( "#boostrap", function() {
+describe( "#bootstrap", function() {
   it("should handle a click on the a tag by delegating to a handleClick function on your view", function() {
     var spy = spyOn(MainView.prototype, "handleClick")
     bootstrap();
