@@ -4,13 +4,19 @@
 * About
 * Instructions
 * Example
+* Events Description
 * Resources
 
 ## About
 One of the jobs of Backbone views is to respond to events or user interaction.  So the view is responsible for a section of the user interface, and any user interaction that happens in that region should be handled by the view. Its job is to listen for events and then call a function to update the model with any changes. Backbone works seamlesly with jQuery to add and remove listeners to the section of the DOM that it manages. The listeners are actually attached to the `el` property of the view, or the root element of the view. 
 
 ## Instructions
-
+1. Create a view object in `views/main.js`
+	* Follow the instructions from the backbone-basic-views lab. 
+	* The view should have initialize and render functions. 
+	* It should also have an events hash which should call `#handleClick` on a click event.
+	* Look at the below example and read the events description below
+2. In `app.js` you should instantiate your view object and append the HTML string to the DOM.
 
 ## Example
 The events property of the view object looks like this:
@@ -31,7 +37,7 @@ MyView = Backbone.View.extend({
 })
 ``` 
 
-Events are key value pairs:
+###Events Description
 
 1. The key has the event type it listens for like `click`, `submit`, `mouseenter`, followed by a space and then a css selector to scope where exactly the event listener should be listening within all the HTML managed by the view.
 2. The value is a string that is the name of a function defined on the view.
