@@ -1,5 +1,21 @@
 // Create your view object here:
 
+MainView = Backbone.View.extend({
+	events : {
+		"click" : "handleClick"
+	},
+	initialize : function() {
+		this.render();
+	},
+	render : function() {
+		this.$el.append("<a href='/whatever'>to the internet</a>")
+		return this;
+	},
+	handleClick : function() {
+		this.model.set("key", "something");
+	}
+});
+
 //  * It should extend (inherit) from the main Backbone view object
 
 //  * It should have a property called render:
