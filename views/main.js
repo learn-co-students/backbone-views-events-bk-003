@@ -24,7 +24,8 @@ MainView = Backbone.View.extend({
 		"click a": "handleClick"
 	},
 
-	handleClick : function() {
+	handleClick : function(event) {
 		console.log("asdf");
+		event.preventDefault();
 	}
 })
