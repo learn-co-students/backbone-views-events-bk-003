@@ -1,3 +1,25 @@
+MainView = Backbone.View.extend({
+
+  events: {
+    "click a" : "handleClick"
+  },
+
+  initialize: function(){
+    this.render();
+  },
+
+  render: function(){
+    this.$el.append('<a href="/whatever">to the internet</a>');
+    return this;
+  },
+
+   handleClick: function(e){
+    console.log('something')
+  }
+
+})
+
+
 // Create your view object here:
 
 //  * It should extend (inherit) from the main Backbone view object
