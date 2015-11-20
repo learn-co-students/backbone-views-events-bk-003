@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="3" errors="0" failures="0" time="0.013" timestamp="2015-11-20T16:03:06">
+		<testcase classname="#boostrap" name="should instantiate your view and return an object" time="0.009">
+		</testcase>
+		<testcase classname="#boostrap" name="should append the proper html string to the body" time="0">
+		</testcase>
+		<testcase classname="#boostrap" name="should handle a click on the a tag by delegating to a #handleClick function on your view" time="0.001">
+		</testcase>
+	</testsuite>
+</testsuites>
+
